@@ -1,1 +1,1 @@
-# LTSDK-iOS
+# LTVoiceSDK-iOS
