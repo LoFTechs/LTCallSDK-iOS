@@ -1,0 +1,6 @@
+framework module JKVoiceSDK {
+  umbrella header "JKVoiceSDK.h"
+
+  export *
+  module * { export * }
+}
