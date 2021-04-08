@@ -1,1 +1,1 @@
-# LTSDK-iOS
+# LTCallSDK-iOS
