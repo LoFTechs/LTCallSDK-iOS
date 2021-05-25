@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong, nonatomic) NSString *semiUID;
 @property (strong, nonatomic) NSString *deviceID;
 @property (strong, nonatomic) NSString *nickName;
-@property (strong, nonatomic) NSDictionary *extInfo;
+@property (strong, nonatomic, nullable) NSDictionary *extInfo;
 @end
 
 @interface LTCallNotificationMessage : LTBaseMessageResponse

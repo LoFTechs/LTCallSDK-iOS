@@ -23,13 +23,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (LTCallCenterManager * _Nonnull)init NS_UNAVAILABLE;
 + (LTCallCenterManager * _Nonnull)new NS_UNAVAILABLE;
-@property (weak, nonatomic) id<LTCallCenterDelegate> delegate;
+@property (strong, nonatomic) id<LTCallCenterDelegate> delegate;
 
 #pragma mark - Call account
 
-- (LTCall *)startCallWithUserID:(NSString *)userID options:(LTCallOptions *)options setDelegate:(id<LTCallDelegate>)delegate;
-- (LTCall *)startCallWithNotificationMessage:(LTCallNotificationMessage *)notificationMessage setDelegate:(id<LTCallDelegate>)delegate;
-- (LTCall *)getCallWithCallID:(NSString *)callID;
+- (LTCall * _Nullable)startCallWithUserID:(NSString *)userID options:(LTCallOptions *)options setDelegate:(id<LTCallDelegate>)delegate;
+- (LTCall * _Nullable)startCallWithNotificationMessage:(LTCallNotificationMessage *)notificationMessage setDelegate:(id<LTCallDelegate>)delegate;
+- (LTCall * _Nullable)getCallWithCallID:(NSString *)callID;
 - (void)queryCDRWithUserID:(NSString *)userID markTS:(long)markTS afterN:(int)afterN completion:(void (^)(LTUserCDRResponse *response))result;
 - (int)getActiveCallCount;
 

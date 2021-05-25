@@ -25,9 +25,9 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @interface LTCall : NSObject<LTCallKitDelegate>
-@property (strong, nonatomic,nullable) id<LTCallDelegate> delegate;
-@property (strong, nonatomic) NSString *callID;
-@property (strong, nonatomic) NSString *groupCallID;
+@property (strong, nonatomic, nullable) id<LTCallDelegate> delegate;
+@property (strong, nonatomic, nullable) NSString *callID;
+@property (strong, nonatomic, nullable) NSString *groupCallID;
 @property (strong, nonatomic, readonly) NSString *accountUserID;
 @property (assign, nonatomic, readonly) LTCallType callType;
 @property (assign, nonatomic) LTCallState callState;

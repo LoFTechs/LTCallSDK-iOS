@@ -42,8 +42,8 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @interface LTCallOptions : NSObject
-@property (strong, nonatomic) NSString *callID;
-@property (strong, nonatomic) NSString *groupCallID;
+@property (strong, nonatomic, nullable) NSString *callID;
+@property (strong, nonatomic, nullable) NSString *groupCallID;
 @property (strong, nonatomic, readonly) NSString *userID;
 @property (strong, nonatomic, readonly) NSString *phoneNumber;
 @property (strong, nonatomic, readonly) NSString *semiUID;
