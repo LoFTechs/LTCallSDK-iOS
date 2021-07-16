@@ -10,7 +10,6 @@
 #import <LTSDK/LTCallKitProxy.h>
 #import <LTCallSDK/LTCallEnum.h>
 #import <LTCallSDK/LTCallOptions.h>
-#import <LTCallSDK/LTCallEvent.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -23,8 +22,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)LTCallStateTerminated:(LTCall *_Nullable)call statusCode:(LTCallStatusCode)statusCode;
 - (void)LTCallMediaStateChanged:(LTCall *_Nonnull)call mediaType:(LTMediaType)mediaType;
 - (void)LTCallConnectDuration:(LTCall *_Nonnull)call duration:(long)sec;
-- (void)LTCallEvent:(LTCall *_Nonnull)call callEvent:(LTCallEvent *)event;
-
 @end
 
 @interface LTCall : NSObject<LTCallKitDelegate>
@@ -53,10 +50,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)activateAudioSession;
 - (void)deactivateAudioSession;
 
-#pragma mark - video session
-
-- (void)activateVideoSession;
-
 #pragma mark - media
 
 - (NSArray *)getAvailableAudioRoutes;
@@ -70,17 +63,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)isCallHeld;
 
 - (void)sendDTMF:(NSString *)dtmfCode playTone:(BOOL)playTone;
-
-#pragma mark - video
-
-- (void)setRemoteVideoView:(UIView *)remoteVideoView;
-- (void)setLocalVideoView:(UIView *)localVideoView;
-
-- (void)switchCamera:(LTCameraType)cameraType;
-- (LTCameraType)getCurrentCameraType;
-
-- (void)disableCamera:(BOOL)disable;
-- (BOOL)isCameraDisabled;
 
 @end
 

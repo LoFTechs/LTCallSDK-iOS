@@ -37,7 +37,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (assign, nonatomic, readonly) NSTimeInterval sendTime;
 @property (strong, nonatomic, readonly) LTCallUserInfo *callerInfo;
 @property (strong, nonatomic, readonly) LTCallUserInfo *calleeInfo;
-@property (assign, nonatomic, readonly) LTCallMode callMode;
 @property (strong, nonatomic, readonly) NSString *caller;
 @property (strong, nonatomic, readonly) NSString *callee;
 @property (strong, nonatomic, readonly) NSString *callID;

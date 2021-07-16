@@ -15,7 +15,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (copy, nonatomic, nullable) NSString *domain;
 @property (copy, nonatomic) NSDictionary *extInfo;
 @property (assign, nonatomic) LTCallType callType;
-@property (assign, nonatomic) LTCallMode callMode;
 @end
 
 @interface LTCallPhoneNumberBuilder : LTCallBuilder
@@ -51,9 +50,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong, nonatomic, readonly) NSString *deviceID;
 @property (strong, nonatomic, readonly) NSString *isrCode;
 @property (strong, nonatomic, readonly) NSDictionary *extInfo;
-@property (assign, nonatomic, readonly) LTCallAccountType accountType;
+@property (assign, nonatomic, readonly) LTCallAccountType voiceAccountType;
 @property (assign, nonatomic, readonly) LTCallType callType;
-@property (assign, nonatomic, readonly) LTCallMode callMode;
 
 - (LTCallOptions * _Nonnull)init NS_UNAVAILABLE;
 + (LTCallOptions * _Nonnull)new NS_UNAVAILABLE;

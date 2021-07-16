@@ -11,8 +11,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSInteger,LTCallMode) {
-    LTCallModeVoice = 0,
-    LTCallModeVideo = 1
+    LTCallModeAudio = 0,
+    LTCallModeVideo = 1,
+    LTCallModeAudioGroupCall = 2
 };
 
 typedef NS_ENUM(NSInteger, LTCallAccountType) {
@@ -22,7 +23,6 @@ typedef NS_ENUM(NSInteger, LTCallAccountType) {
     LTCallAccountTypeSemiUID,
     LTCallAccountTypePhoneNumber
 };
-
 
 typedef NS_ENUM(NSInteger, LTCallType) {
     LTCallTypeOutgoingCall,
@@ -52,8 +52,6 @@ typedef NS_ENUM(NSInteger, LTCallStatusCode) {
     LTCallStatusCodeNetworkDisconnect = 103,
     LTCallStatusCodeUnreachtable = 104,
     LTCallStatusCodeOperationNotAvailable = 105,
-    LTCallStatusCodeOnlySupportVideoMode = 106,
-    LTCallStatusCodeNoCameraPermission = 107,
     LTCallStatusCodeCalleeAtCallerDevice = 111,
     LTCallStatusCodeGroupCallMemberAtAdminDevice = 112,
     LTCallStatusCodeErrorOptions = 201,
@@ -61,7 +59,6 @@ typedef NS_ENUM(NSInteger, LTCallStatusCode) {
     LTCallStatusCodeErrorConnection = 203,
     LTCallStatusCodeErrorNoVoicePacket = 204,
     LTCallStatusCodeErrorExtInfoLength = 205,
-    LTCallStatusCodeErrorCalleeNotSupportVideo = 206,
     LTCallStatusCodeErrorNoSDKPermission = 210,
     LTCallStatusCodeErrorNoValidUser = 211,
     LTCallStatusCodeErrorGroupCallNoChannel = 216,
@@ -72,14 +69,7 @@ typedef NS_ENUM(NSInteger, LTCallStatusCode) {
 typedef NS_ENUM(NSInteger, LTMediaType) {
     LTMediaTypeAudioRoute,
     LTMediaTypeCallMuted,
-    LTMediaTypeCallHeld,
-    LTMediaTypeCameraEnable,
-    LTMediaTypeCameraSwitched
-};
-
-typedef NS_ENUM(NSInteger, LTCallEventType) {
-    LTCallEventTypeMute,
-    LTCallEventTypeCameraDisable
+    LTMediaTypeCallHeld
 };
 
 typedef NS_ENUM(NSInteger, LTAudioRoute) {
@@ -89,9 +79,5 @@ typedef NS_ENUM(NSInteger, LTAudioRoute) {
     LTAudioRouteBluetooth
 };
 
-typedef NS_ENUM(NSInteger, LTCameraType) {
-    LTCameraTypeFront,
-    LTCameraTypeBack
-};
 
 NS_ASSUME_NONNULL_END
