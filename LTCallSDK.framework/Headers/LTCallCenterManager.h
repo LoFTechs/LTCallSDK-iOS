@@ -3,7 +3,7 @@
 //  LTCallSDK
 //
 //  Created by Sheng-Tsang Uou on 2020/6/30.
-//  Copyright © 2020 Sheng-Tsang Uou. All rights reserved.
+//  Copyright © 2020 LoFTech. All rights reserved.
 //
 
 #import <LTCallSDK/LTCall.h>

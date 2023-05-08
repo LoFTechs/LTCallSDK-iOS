@@ -3,7 +3,7 @@
 //  LTCallSDK
 //
 //  Created by shanezhang on 2020/5/7.
-//  Copyright © 2020 李承翰. All rights reserved.
+//  Copyright © 2020 LoFTech. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -50,7 +50,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong, nonatomic, readonly) NSString *deviceID;
 @property (strong, nonatomic, readonly) NSString *isrCode;
 @property (strong, nonatomic, readonly) NSDictionary *extInfo;
-@property (assign, nonatomic, readonly) LTCallAccountType voiceAccountType;
+@property (assign, nonatomic, readonly) LTCallAccountType callAccountType;
 @property (assign, nonatomic, readonly) LTCallType callType;
 
 - (LTCallOptions * _Nonnull)init NS_UNAVAILABLE;

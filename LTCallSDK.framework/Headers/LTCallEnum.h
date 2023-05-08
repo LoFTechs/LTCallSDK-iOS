@@ -3,7 +3,7 @@
 //  LTCallSDK
 //
 //  Created by shanezhang on 2020/5/4.
-//  Copyright © 2020 李承翰. All rights reserved.
+//  Copyright © 2020 LoFTech. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
