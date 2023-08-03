@@ -1,6 +1,0 @@
-framework module LTCallSDK {
-  umbrella header "LTCallSDK.h"
-
-  export *
-  module * { export * }
-}
